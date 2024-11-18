@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal & Varsity</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #0f3460, #16213e);
+            background-size: 200% 200%;
+            animation: gradientMove 12s infinite;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 2.8rem;
+            color: #ffd700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.7), 0 0 30px rgba(255, 69, 0, 0.5);
+            animation: glow 2s infinite alternate;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #bbb;
+            margin-bottom: 40px;
+        }
+
+        /* Links List */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 700px;
+            width: 90%;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        /* Interactive Boxes */
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(39, 119, 246, 0.7);
+            background: linear-gradient(45deg, #fc4a1a, #f7b733);
+        }
+
+        /* Animations */
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.5), 0 0 20px rgba(255, 69, 0, 0.3); }
+            100% { text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 69, 0, 0.6); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+            a {
+                font-size: 1.1rem;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Sahil's Resource Page</h1>
+    <p>Your gateway to knowledge and materials</p>
+
+    <ul>
+        <li><a href="https://drive.google.com/drive/folders/1KBlkSYfJeesjEKelueQ9fiKwh9xeSh6E?usp=drive_link" target="_blank">Previous year CT questions</a></li>
+        <li><a href="https://drive.google.com/drive/u/0/mobile/folders/13CEZTfOSqYDc8ytTZQ57tO1vyQY94NQW/1i9NZ9AmDqbpUIyd0ep0KldyOS3oYG5RL?sort=13&direction=a" target="_blank">Materials from Seniors</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1UB5bVUaV1WmB_ySD5TBczAsWwA4olWKO?usp=sharing" target="_blank">Materials from 22 Batch</a></li>
+        <li><a href="https://drive.google.com/drive/my-drive" target="_blank">Sahil's Personal Drive</a></li>
+    </ul>
+
+</body>
+</html>
